@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <style>
+        body{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>登录注册</h1>
+    <form id="regloginform" class="pure-form pure-form-stacked" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="password" name="password" placeholder="请输入密码">
+        <br>
+        <!--<button type="submit">登录</button>-->
+        <div class="btn-wrapper">
+            <button class="pure-button pure-button-primary" onclick="form=document.getElementById('regloginform');form.action='/register';">注册</button>
+            <button class="pure-button pure-button-primary" onclick="form=document.getElementById('regloginform');form.action='/login';">登录</button>
+        </div>
+    </form>
+
+</body>
+</html>

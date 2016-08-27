@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑</title>
+</head>
+<body>
+<h3>编辑页面</h3>
+
+<form action="/save" method="post">
+        <input hidden="true" name="id" value={{id}}>
+        <input id="id-input-username" type="text" name="username" value={{username}}>
+        <br>
+        <input type="text" name="age" value={{age}}>
+        <br>
+         <input type="text" name="height" value={{height}}>
+        <br>
+        <button type="submit">保存</button>
+    </form>
+
+</body>
+</html>
